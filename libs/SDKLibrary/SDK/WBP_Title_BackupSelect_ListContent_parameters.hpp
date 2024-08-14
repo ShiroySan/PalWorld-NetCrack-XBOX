@@ -16,30 +16,6 @@
 namespace SDK::Params
 {
 
-// Function WBP_Title_BackupSelect_ListContent.WBP_Title_BackupSelect_ListContent_C.Setup
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_Title_BackupSelect_ListContent_C_Setup final
-{
-public:
-	struct FPalUIBackupSaveDisplayData            DisplayData;                                       // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0010(0x0018)()
-};
-static_assert(alignof(WBP_Title_BackupSelect_ListContent_C_Setup) == 0x000008, "Wrong alignment on WBP_Title_BackupSelect_ListContent_C_Setup");
-static_assert(sizeof(WBP_Title_BackupSelect_ListContent_C_Setup) == 0x000028, "Wrong size on WBP_Title_BackupSelect_ListContent_C_Setup");
-static_assert(offsetof(WBP_Title_BackupSelect_ListContent_C_Setup, DisplayData) == 0x000000, "Member 'WBP_Title_BackupSelect_ListContent_C_Setup::DisplayData' has a wrong offset!");
-static_assert(offsetof(WBP_Title_BackupSelect_ListContent_C_Setup, CallFunc_Conv_StringToText_ReturnValue) == 0x000010, "Member 'WBP_Title_BackupSelect_ListContent_C_Setup::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-
-// Function WBP_Title_BackupSelect_ListContent.WBP_Title_BackupSelect_ListContent_C.OnClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Title_BackupSelect_ListContent_C_OnClicked__DelegateSignature final
-{
-public:
-	class UWBP_Title_BackupSelect_ListContent_C*  Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Title_BackupSelect_ListContent_C_OnClicked__DelegateSignature) == 0x000008, "Wrong alignment on WBP_Title_BackupSelect_ListContent_C_OnClicked__DelegateSignature");
-static_assert(sizeof(WBP_Title_BackupSelect_ListContent_C_OnClicked__DelegateSignature) == 0x000008, "Wrong size on WBP_Title_BackupSelect_ListContent_C_OnClicked__DelegateSignature");
-static_assert(offsetof(WBP_Title_BackupSelect_ListContent_C_OnClicked__DelegateSignature, Widget) == 0x000000, "Member 'WBP_Title_BackupSelect_ListContent_C_OnClicked__DelegateSignature::Widget' has a wrong offset!");
-
 // Function WBP_Title_BackupSelect_ListContent.WBP_Title_BackupSelect_ListContent_C.GetDisplayData
 // 0x0010 (0x0010 - 0x0000)
 struct WBP_Title_BackupSelect_ListContent_C_GetDisplayData final
@@ -109,6 +85,30 @@ public:
 static_assert(alignof(WBP_Title_BackupSelect_ListContent_C_BndEvt__WBP_Title_WorldSelect_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature) == 0x000008, "Wrong alignment on WBP_Title_BackupSelect_ListContent_C_BndEvt__WBP_Title_WorldSelect_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
 static_assert(sizeof(WBP_Title_BackupSelect_ListContent_C_BndEvt__WBP_Title_WorldSelect_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature) == 0x000008, "Wrong size on WBP_Title_BackupSelect_ListContent_C_BndEvt__WBP_Title_WorldSelect_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature");
 static_assert(offsetof(WBP_Title_BackupSelect_ListContent_C_BndEvt__WBP_Title_WorldSelect_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature, Button) == 0x000000, "Member 'WBP_Title_BackupSelect_ListContent_C_BndEvt__WBP_Title_WorldSelect_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature::Button' has a wrong offset!");
+
+// Function WBP_Title_BackupSelect_ListContent.WBP_Title_BackupSelect_ListContent_C.Setup
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_Title_BackupSelect_ListContent_C_Setup final
+{
+public:
+	struct FPalUIBackupSaveDisplayData            DisplayData;                                       // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0010(0x0018)()
+};
+static_assert(alignof(WBP_Title_BackupSelect_ListContent_C_Setup) == 0x000008, "Wrong alignment on WBP_Title_BackupSelect_ListContent_C_Setup");
+static_assert(sizeof(WBP_Title_BackupSelect_ListContent_C_Setup) == 0x000028, "Wrong size on WBP_Title_BackupSelect_ListContent_C_Setup");
+static_assert(offsetof(WBP_Title_BackupSelect_ListContent_C_Setup, DisplayData) == 0x000000, "Member 'WBP_Title_BackupSelect_ListContent_C_Setup::DisplayData' has a wrong offset!");
+static_assert(offsetof(WBP_Title_BackupSelect_ListContent_C_Setup, CallFunc_Conv_StringToText_ReturnValue) == 0x000010, "Member 'WBP_Title_BackupSelect_ListContent_C_Setup::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+
+// Function WBP_Title_BackupSelect_ListContent.WBP_Title_BackupSelect_ListContent_C.OnClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Title_BackupSelect_ListContent_C_OnClicked__DelegateSignature final
+{
+public:
+	class UWBP_Title_BackupSelect_ListContent_C*  Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Title_BackupSelect_ListContent_C_OnClicked__DelegateSignature) == 0x000008, "Wrong alignment on WBP_Title_BackupSelect_ListContent_C_OnClicked__DelegateSignature");
+static_assert(sizeof(WBP_Title_BackupSelect_ListContent_C_OnClicked__DelegateSignature) == 0x000008, "Wrong size on WBP_Title_BackupSelect_ListContent_C_OnClicked__DelegateSignature");
+static_assert(offsetof(WBP_Title_BackupSelect_ListContent_C_OnClicked__DelegateSignature, Widget) == 0x000000, "Member 'WBP_Title_BackupSelect_ListContent_C_OnClicked__DelegateSignature::Widget' has a wrong offset!");
 
 }
 

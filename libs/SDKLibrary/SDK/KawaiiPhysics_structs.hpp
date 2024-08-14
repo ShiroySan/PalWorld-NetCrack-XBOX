@@ -94,6 +94,17 @@ static_assert(offsetof(FCollisionLimitBase, OffsetRotation) == 0x000028, "Member
 static_assert(offsetof(FCollisionLimitBase, Location) == 0x000040, "Member 'FCollisionLimitBase::Location' has a wrong offset!");
 static_assert(offsetof(FCollisionLimitBase, Rotation) == 0x000060, "Member 'FCollisionLimitBase::Rotation' has a wrong offset!");
 
+// ScriptStruct KawaiiPhysics.PlanarLimit
+// 0x0020 (0x00A0 - 0x0080)
+struct FPlanarLimit final : public FCollisionLimitBase
+{
+public:
+	struct FPlane                                 Plane;                                             // 0x0080(0x0020)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FPlanarLimit) == 0x000010, "Wrong alignment on FPlanarLimit");
+static_assert(sizeof(FPlanarLimit) == 0x0000A0, "Wrong size on FPlanarLimit");
+static_assert(offsetof(FPlanarLimit, Plane) == 0x000080, "Member 'FPlanarLimit::Plane' has a wrong offset!");
+
 // ScriptStruct KawaiiPhysics.SphericalLimit
 // 0x0010 (0x0090 - 0x0080)
 struct FSphericalLimit final : public FCollisionLimitBase
@@ -121,17 +132,6 @@ static_assert(alignof(FCapsuleLimit) == 0x000010, "Wrong alignment on FCapsuleLi
 static_assert(sizeof(FCapsuleLimit) == 0x000090, "Wrong size on FCapsuleLimit");
 static_assert(offsetof(FCapsuleLimit, Radius) == 0x000080, "Member 'FCapsuleLimit::Radius' has a wrong offset!");
 static_assert(offsetof(FCapsuleLimit, Length) == 0x000084, "Member 'FCapsuleLimit::Length' has a wrong offset!");
-
-// ScriptStruct KawaiiPhysics.PlanarLimit
-// 0x0020 (0x00A0 - 0x0080)
-struct FPlanarLimit final : public FCollisionLimitBase
-{
-public:
-	struct FPlane                                 Plane;                                             // 0x0080(0x0020)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FPlanarLimit) == 0x000010, "Wrong alignment on FPlanarLimit");
-static_assert(sizeof(FPlanarLimit) == 0x0000A0, "Wrong size on FPlanarLimit");
-static_assert(offsetof(FPlanarLimit, Plane) == 0x000080, "Member 'FPlanarLimit::Plane' has a wrong offset!");
 
 // ScriptStruct KawaiiPhysics.KawaiiPhysicsModifyBone
 // 0x00F0 (0x00F0 - 0x0000)

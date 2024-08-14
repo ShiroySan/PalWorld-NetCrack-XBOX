@@ -2800,7 +2800,7 @@ public:
 	class UPalBuildProcess*                       BuildProcess;                                      // 0x0228(0x0008)(Edit, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	EPalMapObjectDamagableType                    DamagableType;                                     // 0x0230(0x0001)(Edit, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_231[0x3];                                      // 0x0231(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalMapObjectStatusValue               HP;                                                // 0x0234(0x0008)(Edit, Net, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	struct FPalMapObjectStatusValue               Hp;                                                // 0x0234(0x0008)(Edit, Net, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_23C[0x4];                                      // 0x023C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             InitialTransformCache;                             // 0x0240(0x0060)(Edit, Net, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UPalMapObjectModelConnectorBase*        Connector;                                         // 0x02A0(0x0008)(Edit, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -2872,7 +2872,7 @@ static_assert(offsetof(UPalMapObjectModel, GroupIdBelongTo) == 0x000210, "Member
 static_assert(offsetof(UPalMapObjectModel, BuildObjectId) == 0x000220, "Member 'UPalMapObjectModel::BuildObjectId' has a wrong offset!");
 static_assert(offsetof(UPalMapObjectModel, BuildProcess) == 0x000228, "Member 'UPalMapObjectModel::BuildProcess' has a wrong offset!");
 static_assert(offsetof(UPalMapObjectModel, DamagableType) == 0x000230, "Member 'UPalMapObjectModel::DamagableType' has a wrong offset!");
-static_assert(offsetof(UPalMapObjectModel, HP) == 0x000234, "Member 'UPalMapObjectModel::HP' has a wrong offset!");
+static_assert(offsetof(UPalMapObjectModel, Hp) == 0x000234, "Member 'UPalMapObjectModel::Hp' has a wrong offset!");
 static_assert(offsetof(UPalMapObjectModel, InitialTransformCache) == 0x000240, "Member 'UPalMapObjectModel::InitialTransformCache' has a wrong offset!");
 static_assert(offsetof(UPalMapObjectModel, Connector) == 0x0002A0, "Member 'UPalMapObjectModel::Connector' has a wrong offset!");
 static_assert(offsetof(UPalMapObjectModel, Effect) == 0x0002A8, "Member 'UPalMapObjectModel::Effect' has a wrong offset!");
@@ -14011,7 +14011,7 @@ static_assert(offsetof(UPalNPCInteractionComponent, InteractConditions) == 0x000
 static_assert(offsetof(UPalNPCInteractionComponent, ConditionFunctions) == 0x000170, "Member 'UPalNPCInteractionComponent::ConditionFunctions' has a wrong offset!");
 
 // Class Pal.PalBaseCampWorkCollection
-// 0x00B8 (0x00E0 - 0x0028)
+// 0x00C0 (0x00E8 - 0x0028)
 class UPalBaseCampWorkCollection final : public UObject
 {
 public:
@@ -14021,9 +14021,9 @@ public:
 	TArray<struct FGuid>                          WorkIds;                                           // 0x0058(0x0010)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NativeAccessSpecifierPrivate)
 	TArray<class UPalBaseCampGroupedWorkBase*>    GroupedWorks;                                      // 0x0068(0x0010)(Edit, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NativeAccessSpecifierPrivate)
 	class UPalBaseCampWorkCollectionReplicationList* ReplicationList;                                   // 0x0078(0x0008)(Edit, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_80[0x8];                                       // 0x0080(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<struct FGuid, struct FPalBaseCampWorkCollectionStashInfo> CannotMoveToWorkInfoMap;                           // 0x0088(0x0050)(Edit, DisableEditOnTemplate, Transient, EditConst, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_D8[0x8];                                       // 0x00D8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_80[0x10];                                      // 0x0080(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<struct FGuid, struct FPalBaseCampWorkCollectionStashInfo> CannotMoveToWorkInfoMap;                           // 0x0090(0x0050)(Edit, DisableEditOnTemplate, Transient, EditConst, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_E0[0x8];                                       // 0x00E0(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void OnRequiredAssign_ServerInternal(class UPalWorkBase* Work, const struct FPalWorkAssignRequirementParameter& RequirementParameter);
@@ -14042,13 +14042,13 @@ public:
 	}
 };
 static_assert(alignof(UPalBaseCampWorkCollection) == 0x000008, "Wrong alignment on UPalBaseCampWorkCollection");
-static_assert(sizeof(UPalBaseCampWorkCollection) == 0x0000E0, "Wrong size on UPalBaseCampWorkCollection");
+static_assert(sizeof(UPalBaseCampWorkCollection) == 0x0000E8, "Wrong size on UPalBaseCampWorkCollection");
 static_assert(offsetof(UPalBaseCampWorkCollection, OnUnassignWorkDelegate) == 0x000038, "Member 'UPalBaseCampWorkCollection::OnUnassignWorkDelegate' has a wrong offset!");
 static_assert(offsetof(UPalBaseCampWorkCollection, BaseCampId) == 0x000048, "Member 'UPalBaseCampWorkCollection::BaseCampId' has a wrong offset!");
 static_assert(offsetof(UPalBaseCampWorkCollection, WorkIds) == 0x000058, "Member 'UPalBaseCampWorkCollection::WorkIds' has a wrong offset!");
 static_assert(offsetof(UPalBaseCampWorkCollection, GroupedWorks) == 0x000068, "Member 'UPalBaseCampWorkCollection::GroupedWorks' has a wrong offset!");
 static_assert(offsetof(UPalBaseCampWorkCollection, ReplicationList) == 0x000078, "Member 'UPalBaseCampWorkCollection::ReplicationList' has a wrong offset!");
-static_assert(offsetof(UPalBaseCampWorkCollection, CannotMoveToWorkInfoMap) == 0x000088, "Member 'UPalBaseCampWorkCollection::CannotMoveToWorkInfoMap' has a wrong offset!");
+static_assert(offsetof(UPalBaseCampWorkCollection, CannotMoveToWorkInfoMap) == 0x000090, "Member 'UPalBaseCampWorkCollection::CannotMoveToWorkInfoMap' has a wrong offset!");
 
 // Class Pal.PalBaseCampWorkCollectionReplicationList
 // 0x0168 (0x0190 - 0x0028)
@@ -15768,8 +15768,6 @@ public:
 	void Play2Montage_WithPlayRate(class UAnimMontage* FirstMontage, class UAnimMontage* NextMontage, float PlayRate);
 	void RequestJump();
 	void ResetTickInterval();
-	void ReviveCharacter(const struct FFixedPoint& HP);
-	void ReviveCharacter_ToServer(const struct FFixedPoint& HP);
 	void RollingDelegate__DelegateSignature();
 	void RPCDummy();
 	void SetActiveActor(bool Active);
@@ -16969,6 +16967,8 @@ public:
 	void RandomizePassive_PlayerWeapon();
 	void RemovePlayerSkin(EPalSkinType Part, class FName InTarget);
 	void RepairEquipment();
+	void RequestDamageToBaseCampPoint(const int32 Value);
+	void RequestDamageToMapObjectInAllBaseCamp(const int32 Value);
 	void RequestFillSlotChestFromInventory();
 	void RequestFillSlotChestToInventory();
 	void RequestLogServerThreadNum();
@@ -18108,8 +18108,6 @@ public:
 	void PlayDamageReaction(const struct FPalDamageRactionInfo& ReactionInfo);
 	void PlayEachDamageReaction(const struct FPalEachDamageRactionInfo& EachReactionInfo);
 	void PopupDamageBySlipDamage_ToALL(int32 Damage);
-	void ProcessDamage_ToServer(const struct FPalDamageInfo& Info);
-	void ProcessDeath_ToServer();
 	void SetDisableLargeDown();
 	void ShowDeadDebugLog(const struct FPalDeadInfo& DeadInfo);
 	void SlipDamage(int32 Damage, bool ShieldIgnore, EPalDeadType DeadType);
@@ -20815,7 +20813,7 @@ public:
 	uint8                                         Pad_98[0x20];                                      // 0x0098(0x0020)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPalFoliageInstanceId                  InstanceId;                                        // 0x00B8(0x0010)(Edit, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class FName                                   FoliageTypeId;                                     // 0x00C8(0x0008)(Edit, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	int32                                         HP;                                                // 0x00D0(0x0004)(Edit, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	int32                                         Hp;                                                // 0x00D0(0x0004)(Edit, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	bool                                          bAlive;                                            // 0x00D4(0x0001)(Edit, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_D5[0x3];                                       // 0x00D5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPalFoliageInstanceTransform           WorldTransform;                                    // 0x00D8(0x0038)(Edit, Net, DisableEditOnTemplate, Transient, EditConst, RepNotify, NoDestructor, NativeAccessSpecifierPrivate)
@@ -20843,7 +20841,7 @@ static_assert(sizeof(UPalFoliageInstance) == 0x000180, "Wrong size on UPalFoliag
 static_assert(offsetof(UPalFoliageInstance, DirtyMap) == 0x000048, "Member 'UPalFoliageInstance::DirtyMap' has a wrong offset!");
 static_assert(offsetof(UPalFoliageInstance, InstanceId) == 0x0000B8, "Member 'UPalFoliageInstance::InstanceId' has a wrong offset!");
 static_assert(offsetof(UPalFoliageInstance, FoliageTypeId) == 0x0000C8, "Member 'UPalFoliageInstance::FoliageTypeId' has a wrong offset!");
-static_assert(offsetof(UPalFoliageInstance, HP) == 0x0000D0, "Member 'UPalFoliageInstance::HP' has a wrong offset!");
+static_assert(offsetof(UPalFoliageInstance, Hp) == 0x0000D0, "Member 'UPalFoliageInstance::Hp' has a wrong offset!");
 static_assert(offsetof(UPalFoliageInstance, bAlive) == 0x0000D4, "Member 'UPalFoliageInstance::bAlive' has a wrong offset!");
 static_assert(offsetof(UPalFoliageInstance, WorldTransform) == 0x0000D8, "Member 'UPalFoliageInstance::WorldTransform' has a wrong offset!");
 static_assert(offsetof(UPalFoliageInstance, WorldTransformCache) == 0x000110, "Member 'UPalFoliageInstance::WorldTransformCache' has a wrong offset!");
@@ -25743,6 +25741,10 @@ public:
 	void AddPlayerStatusPoint_ToServer(const TArray<struct FPalGotStatusPoint>& AddStatusPointArray);
 	void CallOnCoopReleaseDelegate_ToServer();
 	void ConfirmRequestGuild_ToClient(const struct FGuid& FlowUniqueId, const EPalGuildJoinRequestConfirm ConfirmType);
+	void DamageReactionComponent_ProcessDamage_ToServer_ToNPC(const struct FPalDamageInfo& Info, const class AActor* Defender);
+	void DamageReactionComponent_ProcessDamage_ToServer_ToSelfPlayer(const struct FPalDamageInfo& Info, const class AActor* DefenderOtomo);
+	void DamageReactionComponent_ProcessDeath_ToServer_ToNPC(const class AActor* TargetActor);
+	void DamageReactionComponent_ProcessDeath_ToServer_ToSelfPlayer();
 	void Debug_AddExpForALLPlayer_ToServer(int32 AddExp);
 	void Debug_AddMoney_ToServer(int64 AddValue);
 	void Debug_AddPartyExp_ToServer(int32 AddExp);
@@ -34891,7 +34893,6 @@ public:
 	void Debug_RequestStopAICheckOfCharacter_ToServer(class APalCharacter* TargetCharacter);
 	void Debug_SetDestructionByCompleteBuiltFlag_ToServer();
 	void Debug_ShutdownToClient();
-	void DropOtomoSingle_ToServer(const struct FVector& DropLocation, const struct FPalInstanceID& DropID);
 	void EndCrimeDelegate__DelegateSignature(const struct FGuid& CrimeInstanceId);
 	bool EnterChat(const class FText& Msg, EPalChatCategory Category);
 	void EnterChat_Receive(const struct FPalChatMessage& ChatMessage);
@@ -34899,7 +34900,6 @@ public:
 	void FixedCharacterName(const class FString& CharacterName);
 	TArray<struct FPalLogInfo_DropPal> GetAndClearLastDropPalInfo();
 	struct FPalPlayerInfoForMap GetPlayerInfoForMap();
-	void GrantExpForParty(const int32 ExpValue);
 	bool IsCompleteLoadInitWorldPartition();
 	bool IsSelectedInitMapPoint();
 	void LoadTitleLevel(bool bIsSaveSuccess);
@@ -34948,8 +34948,6 @@ public:
 	void RequestUpdatePlayerSettingsForServer_ToServer(const struct FPalPlayerSettingsForServer& NewSettings);
 	void ReturnSelfDelegate__DelegateSignature(class APalPlayerState* PlayerState);
 	void SendAccountInitData_ForServer(const struct FPalPlayerAccountInitData& AccountInitData);
-	void SendDamage_ToServer(class APalCharacter* Target, const struct FPalDamageInfo& Info);
-	void SendDeath_ToServer(class APalCharacter* Target);
 	void ShowBossDefeatRewardUI(int32 TechPoint);
 	void ShowTowerBossDefeatRewardUI();
 	void ShowUnlockHardModeUI();

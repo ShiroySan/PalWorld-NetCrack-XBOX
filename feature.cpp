@@ -283,7 +283,7 @@ void SetDemiGodMode(bool bIsSet)
 		return;
 
 	//	attempt additional parameters
-	sParams.HP.Value = sParams.MaxHP.Value;
+	sParams.Hp.Value = sParams.MaxHP.Value;
 	sParams.MP.Value = sParams.MaxMP.Value;
 	sParams.FullStomach = sParams.MaxFullStomach;
 	sParams.PhysicalHealth = EPalStatusPhysicalHealthType::Healthful;
@@ -304,7 +304,7 @@ void RespawnLocalPlayer(bool bIsSafe)
 
 void SetPlayerHealth(__int32 newHealth)
 {
-	APalPlayerCharacter* pPalPlayerCharacter = Config.GetPalPlayerCharacter();
+	/*APalPlayerCharacter* pPalPlayerCharacter = Config.GetPalPlayerCharacter();
 	if (!pPalPlayerCharacter)
 		return;
 
@@ -321,27 +321,16 @@ void SetPlayerHealth(__int32 newHealth)
 	if (pParams->GetHP().Value < newHealth)
 	{
 		pPalPlayerCharacter->ReviveCharacter_ToServer(FFixedPoint(newHealth));
-	}
+	}*/
 }
 
 //	
 void ReviveLocalPlayer()
 {
-	APalPlayerCharacter* pPalPlayerCharacter = Config.GetPalPlayerCharacter();
-	if (!pPalPlayerCharacter)
-		return;
-
-	UPalCharacterParameterComponent* pParams = pPalPlayerCharacter->CharacterParameterComponent;
-	if (!pParams)
-		return;
-
-	if (pParams->IsDying())
-	{
-		pParams->ReviveFromDying();
-		pPalPlayerCharacter->ReviveCharacter(FFixedPoint(pParams->GetMaxHP().Value));
-	}
-
-	pPalPlayerCharacter->ReviveCharacter_ToServer(FFixedPoint(pParams->GetMaxHP().Value));
+	/*APalPlayerCharacter* pPalPlayerCharacter = Config.GetPalPlayerCharacter();
+	auto transmitter = UPalUtility::GetNetworkTransmitterByPlayerCharacter(pPalPlayerCharacter);
+	transmitter->CharacterStatusOperation->RequestReviveCharacterFromDying(pPalPlayerCharacter);
+	transmitter->CharacterStatusOperation->RequestReviveCharacterFromDying_ToServer(pPalPlayerCharacter);*/
 }
 
 //	
@@ -361,11 +350,11 @@ void ResetStamina()
 //	
 void GiveExperiencePoints(__int32 mXP)
 {
-	auto pPalPlayerState = Config.GetPalPlayerState();
+	/*auto pPalPlayerState = Config.GetPalPlayerState();
 	if (!pPalPlayerState)
 		return;
 
-	pPalPlayerState->GrantExpForParty(mXP);
+	pPalPlayerState->GrantExpForParty(mXP);*/
 }
 
 //	
@@ -536,22 +525,22 @@ void ForgeActor(SDK::AActor* pTarget, float mDistance, float mHeight, float mAng
 //	credit: 
 void SendDamageToActor(APalCharacter* pTarget, int32 damage, bool bSpoofAttacker)
 {
-	APalPlayerState* pPalPlayerState = Config.GetPalPlayerState();
-	APalPlayerCharacter* pPalPlayerCharacter = Config.GetPalPlayerCharacter();
-	if (!pPalPlayerState || !pPalPlayerCharacter)
-		return;
+	//APalPlayerState* pPalPlayerState = Config.GetPalPlayerState();
+	//APalPlayerCharacter* pPalPlayerCharacter = Config.GetPalPlayerCharacter();
+	//if (!pPalPlayerState || !pPalPlayerCharacter)
+	//	return;
 
-	FPalDamageInfo  info = FPalDamageInfo();
-	info.AttackElementType = EPalElementType::Normal;
-	info.Attacker = pPalPlayerCharacter;		//	@TODO: spoof attacker
-	info.AttackerGroupID = Config.GetPalPlayerState()->IndividualHandleId.PlayerUId;
-	info.AttackerLevel = 50;	
-	info.AttackType = EPalAttackType::Weapon;
-	info.bApplyNativeDamageValue = true;
-	info.bAttackableToFriend = true;
-	info.IgnoreShield = true;
-	info.NativeDamageValue = damage;
-	pPalPlayerState->SendDamage_ToServer(pTarget, info);
+	//FPalDamageInfo  info = FPalDamageInfo();
+	//info.AttackElementType = EPalElementType::Normal;
+	//info.Attacker = pPalPlayerCharacter;		//	@TODO: spoof attacker
+	//info.AttackerGroupID = Config.GetPalPlayerState()->IndividualHandleId.PlayerUId;
+	//info.AttackerLevel = 50;	
+	//info.AttackType = EPalAttackType::Weapon;
+	//info.bApplyNativeDamageValue = true;
+	//info.bAttackableToFriend = true;
+	//info.IgnoreShield = true;
+	//info.NativeDamageValue = damage;
+	//pPalPlayerState->SendDamage_ToServer(pTarget, info);
 }
 
 //	 NOTE: only targets pals

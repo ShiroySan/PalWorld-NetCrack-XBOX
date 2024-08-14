@@ -36,14 +36,14 @@ public:
 	struct FPalUIBackupSaveDisplayData            CachedDisplayData;                                 // 0x0478(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void Setup(const struct FPalUIBackupSaveDisplayData& DisplayData);
-	void OnClicked__DelegateSignature(class UWBP_Title_BackupSelect_ListContent_C* Widget);
 	void GetDisplayData(struct FPalUIBackupSaveDisplayData* DisplayData);
 	void ExecuteUbergraph_WBP_Title_BackupSelect_ListContent(int32 EntryPoint);
 	void BndEvt__WBP_Title_WorldSelect_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_2_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
 	void BndEvt__WBP_Title_WorldSelect_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_1_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
 	void BndEvt__WBP_Title_WorldSelect_ListContent_WBP_PalInvisibleButton_K2Node_ComponentBoundEvent_0_CommonButtonBaseClicked__DelegateSignature(class UCommonButtonBase* Button);
 	void AnmEvent_Unselect();
+	void Setup(const struct FPalUIBackupSaveDisplayData& DisplayData);
+	void OnClicked__DelegateSignature(class UWBP_Title_BackupSelect_ListContent_C* Widget);
 
 public:
 	static class UClass* StaticClass()

@@ -201,6 +201,19 @@ static_assert(offsetof(FChaosTrailingEventData, AngularVelocity) == 0x000030, "M
 static_assert(offsetof(FChaosTrailingEventData, Mass) == 0x000048, "Member 'FChaosTrailingEventData::Mass' has a wrong offset!");
 static_assert(offsetof(FChaosTrailingEventData, ParticleIndex) == 0x00004C, "Member 'FChaosTrailingEventData::ParticleIndex' has a wrong offset!");
 
+// ScriptStruct GeometryCollectionEngine.GeometryCollectionAutoInstanceMesh
+// 0x0030 (0x0030 - 0x0000)
+struct FGeometryCollectionAutoInstanceMesh final
+{
+public:
+	struct FSoftObjectPath                        StaticMesh;                                        // 0x0000(0x0020)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class UMaterialInterface*>             Materials;                                         // 0x0020(0x0010)(Edit, BlueprintVisible, ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FGeometryCollectionAutoInstanceMesh) == 0x000008, "Wrong alignment on FGeometryCollectionAutoInstanceMesh");
+static_assert(sizeof(FGeometryCollectionAutoInstanceMesh) == 0x000030, "Wrong size on FGeometryCollectionAutoInstanceMesh");
+static_assert(offsetof(FGeometryCollectionAutoInstanceMesh, StaticMesh) == 0x000000, "Member 'FGeometryCollectionAutoInstanceMesh::StaticMesh' has a wrong offset!");
+static_assert(offsetof(FGeometryCollectionAutoInstanceMesh, Materials) == 0x000020, "Member 'FGeometryCollectionAutoInstanceMesh::Materials' has a wrong offset!");
+
 // ScriptStruct GeometryCollectionEngine.ChaosCollisionEventData
 // 0x0080 (0x0080 - 0x0000)
 struct FChaosCollisionEventData final
@@ -379,19 +392,6 @@ static_assert(offsetof(FGeometryCollectionSource, LocalTransform) == 0x000020, "
 static_assert(offsetof(FGeometryCollectionSource, SourceMaterial) == 0x000080, "Member 'FGeometryCollectionSource::SourceMaterial' has a wrong offset!");
 static_assert(offsetof(FGeometryCollectionSource, bAddInternalMaterials) == 0x000090, "Member 'FGeometryCollectionSource::bAddInternalMaterials' has a wrong offset!");
 static_assert(offsetof(FGeometryCollectionSource, bSplitComponents) == 0x000091, "Member 'FGeometryCollectionSource::bSplitComponents' has a wrong offset!");
-
-// ScriptStruct GeometryCollectionEngine.GeometryCollectionAutoInstanceMesh
-// 0x0030 (0x0030 - 0x0000)
-struct FGeometryCollectionAutoInstanceMesh final
-{
-public:
-	struct FSoftObjectPath                        StaticMesh;                                        // 0x0000(0x0020)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class UMaterialInterface*>             Materials;                                         // 0x0020(0x0010)(Edit, BlueprintVisible, ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FGeometryCollectionAutoInstanceMesh) == 0x000008, "Wrong alignment on FGeometryCollectionAutoInstanceMesh");
-static_assert(sizeof(FGeometryCollectionAutoInstanceMesh) == 0x000030, "Wrong size on FGeometryCollectionAutoInstanceMesh");
-static_assert(offsetof(FGeometryCollectionAutoInstanceMesh, StaticMesh) == 0x000000, "Member 'FGeometryCollectionAutoInstanceMesh::StaticMesh' has a wrong offset!");
-static_assert(offsetof(FGeometryCollectionAutoInstanceMesh, Materials) == 0x000020, "Member 'FGeometryCollectionAutoInstanceMesh::Materials' has a wrong offset!");
 
 // ScriptStruct GeometryCollectionEngine.GeometryCollectionEmbeddedExemplar
 // 0x0030 (0x0030 - 0x0000)

@@ -17,243 +17,6 @@
 namespace SDK::Params
 {
 
-// Function WBP_Control_Settings.WBP_Control_Settings_C.SwitchTab
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Control_Settings_C_SwitchTab final
-{
-public:
-	bool                                          Next;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Control_Settings_C_SwitchTab) == 0x000001, "Wrong alignment on WBP_Control_Settings_C_SwitchTab");
-static_assert(sizeof(WBP_Control_Settings_C_SwitchTab) == 0x000001, "Wrong size on WBP_Control_Settings_C_SwitchTab");
-static_assert(offsetof(WBP_Control_Settings_C_SwitchTab, Next) == 0x000000, "Member 'WBP_Control_Settings_C_SwitchTab::Next' has a wrong offset!");
-
-// Function WBP_Control_Settings.WBP_Control_Settings_C.SwitchPanel
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_Control_Settings_C_SwitchPanel final
-{
-public:
-	int32                                         Param_Index;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Control_Settings_C_SwitchPanel) == 0x000004, "Wrong alignment on WBP_Control_Settings_C_SwitchPanel");
-static_assert(sizeof(WBP_Control_Settings_C_SwitchPanel) == 0x000004, "Wrong size on WBP_Control_Settings_C_SwitchPanel");
-static_assert(offsetof(WBP_Control_Settings_C_SwitchPanel, Param_Index) == 0x000000, "Member 'WBP_Control_Settings_C_SwitchPanel::Param_Index' has a wrong offset!");
-
-// Function WBP_Control_Settings.WBP_Control_Settings_C.SetDefault
-// 0x0188 (0x0188 - 0x0000)
-struct WBP_Control_Settings_C_SetDefault final
-{
-public:
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_2;                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3[0x5];                                        // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalOptionCommonSettings               K2Node_MakeStruct_PalOptionCommonSettings;         // 0x0008(0x0030)()
-	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_39[0x3];                                       // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalOptionKeyboardSettings             K2Node_MakeStruct_PalOptionKeyboardSettings;       // 0x003C(0x0014)(NoDestructor)
-	bool                                          CallFunc_IsVisible_ReturnValue_1;                  // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_51[0x3];                                       // 0x0051(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FPalOptionPadSettings                  K2Node_MakeStruct_PalOptionPadSettings;            // 0x0054(0x001C)(NoDestructor)
-	struct FPalOptionUISettings                   K2Node_MakeStruct_PalOptionUISettings;             // 0x0070(0x0018)(NoDestructor)
-	double                                        CallFunc_Conv_IntToDouble_ReturnValue;             // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_CurrentValue_ImplicitCast;      // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_CurrentValue_ImplicitCast_1;    // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_CurrentValue_ImplicitCast_2;    // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_CurrentValue_ImplicitCast_3;    // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_CurrentValue_ImplicitCast_4;    // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_CurrentValue_ImplicitCast_5;    // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_CurrentValue_ImplicitCast_6;    // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetValue_Value_ImplicitCast;              // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_Min_ImplicitCast;               // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_Max_ImplicitCast;               // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_Min_ImplicitCast_1;             // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_Max_ImplicitCast_1;             // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_Min_ImplicitCast_2;             // 0x00F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_Max_ImplicitCast_2;             // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_Min_ImplicitCast_3;             // 0x0100(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_Max_ImplicitCast_3;             // 0x0108(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_Min_ImplicitCast_4;             // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_Max_ImplicitCast_4;             // 0x0118(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_Min_ImplicitCast_5;             // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_Max_ImplicitCast_5;             // 0x0128(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_Min_ImplicitCast_6;             // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetValue_Min_ImplicitCast;                // 0x0138(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_Max_ImplicitCast_6;             // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetValue_Max_ImplicitCast;                // 0x0148(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_CurrentValue_ImplicitCast_7;    // 0x0150(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetOutline_OutlineOpacity_ImplicitCast;   // 0x0158(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_CurrentValue_ImplicitCast_8;    // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_Min_ImplicitCast_7;             // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_Max_ImplicitCast_7;             // 0x0170(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_Min_ImplicitCast_8;             // 0x0178(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_SetSlider_Max_ImplicitCast_8;             // 0x0180(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Control_Settings_C_SetDefault) == 0x000008, "Wrong alignment on WBP_Control_Settings_C_SetDefault");
-static_assert(sizeof(WBP_Control_Settings_C_SetDefault) == 0x000188, "Wrong size on WBP_Control_Settings_C_SetDefault");
-static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_Not_PreBool_ReturnValue) == 0x000000, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_Not_PreBool_ReturnValue_1) == 0x000001, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_Not_PreBool_ReturnValue_2) == 0x000002, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_Not_PreBool_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_Control_Settings_C_SetDefault, K2Node_MakeStruct_PalOptionCommonSettings) == 0x000008, "Member 'WBP_Control_Settings_C_SetDefault::K2Node_MakeStruct_PalOptionCommonSettings' has a wrong offset!");
-static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_IsVisible_ReturnValue) == 0x000038, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_IsVisible_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Control_Settings_C_SetDefault, K2Node_MakeStruct_PalOptionKeyboardSettings) == 0x00003C, "Member 'WBP_Control_Settings_C_SetDefault::K2Node_MakeStruct_PalOptionKeyboardSettings' has a wrong offset!");
-static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_IsVisible_ReturnValue_1) == 0x000050, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_IsVisible_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_Control_Settings_C_SetDefault, K2Node_MakeStruct_PalOptionPadSettings) == 0x000054, "Member 'WBP_Control_Settings_C_SetDefault::K2Node_MakeStruct_PalOptionPadSettings' has a wrong offset!");
-static_assert(offsetof(WBP_Control_Settings_C_SetDefault, K2Node_MakeStruct_PalOptionUISettings) == 0x000070, "Member 'WBP_Control_Settings_C_SetDefault::K2Node_MakeStruct_PalOptionUISettings' has a wrong offset!");
-static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_Conv_IntToDouble_ReturnValue) == 0x000088, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_Conv_IntToDouble_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetSlider_CurrentValue_ImplicitCast) == 0x000090, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetSlider_CurrentValue_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetSlider_CurrentValue_ImplicitCast_1) == 0x000098, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetSlider_CurrentValue_ImplicitCast_1' has a wrong offset!");
-static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetSlider_CurrentValue_ImplicitCast_2) == 0x0000A0, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetSlider_CurrentValue_ImplicitCast_2' has a wrong offset!");
-static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetSlider_CurrentValue_ImplicitCast_3) == 0x0000A8, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetSlider_CurrentValue_ImplicitCast_3' has a wrong offset!");
-static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetSlider_CurrentValue_ImplicitCast_4) == 0x0000B0, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetSlider_CurrentValue_ImplicitCast_4' has a wrong offset!");
-static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetSlider_CurrentValue_ImplicitCast_5) == 0x0000B8, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetSlider_CurrentValue_ImplicitCast_5' has a wrong offset!");
-static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetSlider_CurrentValue_ImplicitCast_6) == 0x0000C0, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetSlider_CurrentValue_ImplicitCast_6' has a wrong offset!");
-static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetValue_Value_ImplicitCast) == 0x0000C8, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetValue_Value_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetSlider_Min_ImplicitCast) == 0x0000D0, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetSlider_Min_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetSlider_Max_ImplicitCast) == 0x0000D8, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetSlider_Max_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetSlider_Min_ImplicitCast_1) == 0x0000E0, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetSlider_Min_ImplicitCast_1' has a wrong offset!");
-static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetSlider_Max_ImplicitCast_1) == 0x0000E8, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetSlider_Max_ImplicitCast_1' has a wrong offset!");
-static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetSlider_Min_ImplicitCast_2) == 0x0000F0, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetSlider_Min_ImplicitCast_2' has a wrong offset!");
-static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetSlider_Max_ImplicitCast_2) == 0x0000F8, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetSlider_Max_ImplicitCast_2' has a wrong offset!");
-static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetSlider_Min_ImplicitCast_3) == 0x000100, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetSlider_Min_ImplicitCast_3' has a wrong offset!");
-static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetSlider_Max_ImplicitCast_3) == 0x000108, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetSlider_Max_ImplicitCast_3' has a wrong offset!");
-static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetSlider_Min_ImplicitCast_4) == 0x000110, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetSlider_Min_ImplicitCast_4' has a wrong offset!");
-static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetSlider_Max_ImplicitCast_4) == 0x000118, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetSlider_Max_ImplicitCast_4' has a wrong offset!");
-static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetSlider_Min_ImplicitCast_5) == 0x000120, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetSlider_Min_ImplicitCast_5' has a wrong offset!");
-static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetSlider_Max_ImplicitCast_5) == 0x000128, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetSlider_Max_ImplicitCast_5' has a wrong offset!");
-static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetSlider_Min_ImplicitCast_6) == 0x000130, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetSlider_Min_ImplicitCast_6' has a wrong offset!");
-static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetValue_Min_ImplicitCast) == 0x000138, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetValue_Min_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetSlider_Max_ImplicitCast_6) == 0x000140, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetSlider_Max_ImplicitCast_6' has a wrong offset!");
-static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetValue_Max_ImplicitCast) == 0x000148, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetValue_Max_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetSlider_CurrentValue_ImplicitCast_7) == 0x000150, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetSlider_CurrentValue_ImplicitCast_7' has a wrong offset!");
-static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetOutline_OutlineOpacity_ImplicitCast) == 0x000158, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetOutline_OutlineOpacity_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetSlider_CurrentValue_ImplicitCast_8) == 0x000160, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetSlider_CurrentValue_ImplicitCast_8' has a wrong offset!");
-static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetSlider_Min_ImplicitCast_7) == 0x000168, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetSlider_Min_ImplicitCast_7' has a wrong offset!");
-static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetSlider_Max_ImplicitCast_7) == 0x000170, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetSlider_Max_ImplicitCast_7' has a wrong offset!");
-static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetSlider_Min_ImplicitCast_8) == 0x000178, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetSlider_Min_ImplicitCast_8' has a wrong offset!");
-static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetSlider_Max_ImplicitCast_8) == 0x000180, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetSlider_Max_ImplicitCast_8' has a wrong offset!");
-
-// Function WBP_Control_Settings.WBP_Control_Settings_C.OnVibChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Control_Settings_C_OnVibChanged final
-{
-public:
-	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Control_Settings_C_OnVibChanged) == 0x000001, "Wrong alignment on WBP_Control_Settings_C_OnVibChanged");
-static_assert(sizeof(WBP_Control_Settings_C_OnVibChanged) == 0x000001, "Wrong size on WBP_Control_Settings_C_OnVibChanged");
-static_assert(offsetof(WBP_Control_Settings_C_OnVibChanged, IsOn) == 0x000000, "Member 'WBP_Control_Settings_C_OnVibChanged::IsOn' has a wrong offset!");
-
-// Function WBP_Control_Settings.WBP_Control_Settings_C.OnTutorialDisplayChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Control_Settings_C_OnTutorialDisplayChanged final
-{
-public:
-	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Control_Settings_C_OnTutorialDisplayChanged) == 0x000001, "Wrong alignment on WBP_Control_Settings_C_OnTutorialDisplayChanged");
-static_assert(sizeof(WBP_Control_Settings_C_OnTutorialDisplayChanged) == 0x000001, "Wrong size on WBP_Control_Settings_C_OnTutorialDisplayChanged");
-static_assert(offsetof(WBP_Control_Settings_C_OnTutorialDisplayChanged, IsOn) == 0x000000, "Member 'WBP_Control_Settings_C_OnTutorialDisplayChanged::IsOn' has a wrong offset!");
-
-// Function WBP_Control_Settings.WBP_Control_Settings_C.OnToggleLongPressChanged_GP
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Control_Settings_C_OnToggleLongPressChanged_GP final
-{
-public:
-	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Control_Settings_C_OnToggleLongPressChanged_GP) == 0x000001, "Wrong alignment on WBP_Control_Settings_C_OnToggleLongPressChanged_GP");
-static_assert(sizeof(WBP_Control_Settings_C_OnToggleLongPressChanged_GP) == 0x000001, "Wrong size on WBP_Control_Settings_C_OnToggleLongPressChanged_GP");
-static_assert(offsetof(WBP_Control_Settings_C_OnToggleLongPressChanged_GP, IsOn) == 0x000000, "Member 'WBP_Control_Settings_C_OnToggleLongPressChanged_GP::IsOn' has a wrong offset!");
-
-// Function WBP_Control_Settings.WBP_Control_Settings_C.OnToggleLongPressChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Control_Settings_C_OnToggleLongPressChanged final
-{
-public:
-	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Control_Settings_C_OnToggleLongPressChanged) == 0x000001, "Wrong alignment on WBP_Control_Settings_C_OnToggleLongPressChanged");
-static_assert(sizeof(WBP_Control_Settings_C_OnToggleLongPressChanged) == 0x000001, "Wrong size on WBP_Control_Settings_C_OnToggleLongPressChanged");
-static_assert(offsetof(WBP_Control_Settings_C_OnToggleLongPressChanged, IsOn) == 0x000000, "Member 'WBP_Control_Settings_C_OnToggleLongPressChanged::IsOn' has a wrong offset!");
-
-// Function WBP_Control_Settings.WBP_Control_Settings_C.OnRStickYChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Control_Settings_C_OnRStickYChanged final
-{
-public:
-	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Control_Settings_C_OnRStickYChanged) == 0x000001, "Wrong alignment on WBP_Control_Settings_C_OnRStickYChanged");
-static_assert(sizeof(WBP_Control_Settings_C_OnRStickYChanged) == 0x000001, "Wrong size on WBP_Control_Settings_C_OnRStickYChanged");
-static_assert(offsetof(WBP_Control_Settings_C_OnRStickYChanged, IsOn) == 0x000000, "Member 'WBP_Control_Settings_C_OnRStickYChanged::IsOn' has a wrong offset!");
-
-// Function WBP_Control_Settings.WBP_Control_Settings_C.OnRStickXChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Control_Settings_C_OnRStickXChanged final
-{
-public:
-	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Control_Settings_C_OnRStickXChanged) == 0x000001, "Wrong alignment on WBP_Control_Settings_C_OnRStickXChanged");
-static_assert(sizeof(WBP_Control_Settings_C_OnRStickXChanged) == 0x000001, "Wrong size on WBP_Control_Settings_C_OnRStickXChanged");
-static_assert(offsetof(WBP_Control_Settings_C_OnRStickXChanged, IsOn) == 0x000000, "Member 'WBP_Control_Settings_C_OnRStickXChanged::IsOn' has a wrong offset!");
-
-// Function WBP_Control_Settings.WBP_Control_Settings_C.OnRStickThreChanged
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Control_Settings_C_OnRStickThreChanged final
-{
-public:
-	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Control_Settings_C_OnRStickThreChanged) == 0x000008, "Wrong alignment on WBP_Control_Settings_C_OnRStickThreChanged");
-static_assert(sizeof(WBP_Control_Settings_C_OnRStickThreChanged) == 0x000008, "Wrong size on WBP_Control_Settings_C_OnRStickThreChanged");
-static_assert(offsetof(WBP_Control_Settings_C_OnRStickThreChanged, Value) == 0x000000, "Member 'WBP_Control_Settings_C_OnRStickThreChanged::Value' has a wrong offset!");
-
-// Function WBP_Control_Settings.WBP_Control_Settings_C.OnRStickSensiChanged
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Control_Settings_C_OnRStickSensiChanged final
-{
-public:
-	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Control_Settings_C_OnRStickSensiChanged) == 0x000008, "Wrong alignment on WBP_Control_Settings_C_OnRStickSensiChanged");
-static_assert(sizeof(WBP_Control_Settings_C_OnRStickSensiChanged) == 0x000008, "Wrong size on WBP_Control_Settings_C_OnRStickSensiChanged");
-static_assert(offsetof(WBP_Control_Settings_C_OnRStickSensiChanged, Value) == 0x000000, "Member 'WBP_Control_Settings_C_OnRStickSensiChanged::Value' has a wrong offset!");
-
-// Function WBP_Control_Settings.WBP_Control_Settings_C.OnMouseYChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Control_Settings_C_OnMouseYChanged final
-{
-public:
-	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Control_Settings_C_OnMouseYChanged) == 0x000001, "Wrong alignment on WBP_Control_Settings_C_OnMouseYChanged");
-static_assert(sizeof(WBP_Control_Settings_C_OnMouseYChanged) == 0x000001, "Wrong size on WBP_Control_Settings_C_OnMouseYChanged");
-static_assert(offsetof(WBP_Control_Settings_C_OnMouseYChanged, IsOn) == 0x000000, "Member 'WBP_Control_Settings_C_OnMouseYChanged::IsOn' has a wrong offset!");
-
-// Function WBP_Control_Settings.WBP_Control_Settings_C.OnMouseXChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Control_Settings_C_OnMouseXChanged final
-{
-public:
-	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Control_Settings_C_OnMouseXChanged) == 0x000001, "Wrong alignment on WBP_Control_Settings_C_OnMouseXChanged");
-static_assert(sizeof(WBP_Control_Settings_C_OnMouseXChanged) == 0x000001, "Wrong size on WBP_Control_Settings_C_OnMouseXChanged");
-static_assert(offsetof(WBP_Control_Settings_C_OnMouseXChanged, IsOn) == 0x000000, "Member 'WBP_Control_Settings_C_OnMouseXChanged::IsOn' has a wrong offset!");
-
-// Function WBP_Control_Settings.WBP_Control_Settings_C.OnMouseSensiChanged
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Control_Settings_C_OnMouseSensiChanged final
-{
-public:
-	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_Control_Settings_C_OnMouseSensiChanged) == 0x000008, "Wrong alignment on WBP_Control_Settings_C_OnMouseSensiChanged");
-static_assert(sizeof(WBP_Control_Settings_C_OnMouseSensiChanged) == 0x000008, "Wrong size on WBP_Control_Settings_C_OnMouseSensiChanged");
-static_assert(offsetof(WBP_Control_Settings_C_OnMouseSensiChanged, Value) == 0x000000, "Member 'WBP_Control_Settings_C_OnMouseSensiChanged::Value' has a wrong offset!");
-
 // Function WBP_Control_Settings.WBP_Control_Settings_C.OnMouseAIMChanged
 // 0x0008 (0x0008 - 0x0000)
 struct WBP_Control_Settings_C_OnMouseAIMChanged final
@@ -737,6 +500,243 @@ static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Setti
 static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, CallFunc_SetSlider_Max_ImplicitCast_8) == 0x000530, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::CallFunc_SetSlider_Max_ImplicitCast_8' has a wrong offset!");
 static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, K2Node_SetFieldsInStruct_ReticleOutlineOpacity_ImplicitCast) == 0x000538, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::K2Node_SetFieldsInStruct_ReticleOutlineOpacity_ImplicitCast' has a wrong offset!");
 static_assert(offsetof(WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings, K2Node_SetFieldsInStruct_ChatUICloseDelayTime_ImplicitCast) == 0x00053C, "Member 'WBP_Control_Settings_C_ExecuteUbergraph_WBP_Control_Settings::K2Node_SetFieldsInStruct_ChatUICloseDelayTime_ImplicitCast' has a wrong offset!");
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.OnRStickYChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Control_Settings_C_OnRStickYChanged final
+{
+public:
+	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Control_Settings_C_OnRStickYChanged) == 0x000001, "Wrong alignment on WBP_Control_Settings_C_OnRStickYChanged");
+static_assert(sizeof(WBP_Control_Settings_C_OnRStickYChanged) == 0x000001, "Wrong size on WBP_Control_Settings_C_OnRStickYChanged");
+static_assert(offsetof(WBP_Control_Settings_C_OnRStickYChanged, IsOn) == 0x000000, "Member 'WBP_Control_Settings_C_OnRStickYChanged::IsOn' has a wrong offset!");
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.OnRStickXChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Control_Settings_C_OnRStickXChanged final
+{
+public:
+	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Control_Settings_C_OnRStickXChanged) == 0x000001, "Wrong alignment on WBP_Control_Settings_C_OnRStickXChanged");
+static_assert(sizeof(WBP_Control_Settings_C_OnRStickXChanged) == 0x000001, "Wrong size on WBP_Control_Settings_C_OnRStickXChanged");
+static_assert(offsetof(WBP_Control_Settings_C_OnRStickXChanged, IsOn) == 0x000000, "Member 'WBP_Control_Settings_C_OnRStickXChanged::IsOn' has a wrong offset!");
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.OnRStickThreChanged
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Control_Settings_C_OnRStickThreChanged final
+{
+public:
+	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Control_Settings_C_OnRStickThreChanged) == 0x000008, "Wrong alignment on WBP_Control_Settings_C_OnRStickThreChanged");
+static_assert(sizeof(WBP_Control_Settings_C_OnRStickThreChanged) == 0x000008, "Wrong size on WBP_Control_Settings_C_OnRStickThreChanged");
+static_assert(offsetof(WBP_Control_Settings_C_OnRStickThreChanged, Value) == 0x000000, "Member 'WBP_Control_Settings_C_OnRStickThreChanged::Value' has a wrong offset!");
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.OnRStickSensiChanged
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Control_Settings_C_OnRStickSensiChanged final
+{
+public:
+	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Control_Settings_C_OnRStickSensiChanged) == 0x000008, "Wrong alignment on WBP_Control_Settings_C_OnRStickSensiChanged");
+static_assert(sizeof(WBP_Control_Settings_C_OnRStickSensiChanged) == 0x000008, "Wrong size on WBP_Control_Settings_C_OnRStickSensiChanged");
+static_assert(offsetof(WBP_Control_Settings_C_OnRStickSensiChanged, Value) == 0x000000, "Member 'WBP_Control_Settings_C_OnRStickSensiChanged::Value' has a wrong offset!");
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.OnMouseYChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Control_Settings_C_OnMouseYChanged final
+{
+public:
+	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Control_Settings_C_OnMouseYChanged) == 0x000001, "Wrong alignment on WBP_Control_Settings_C_OnMouseYChanged");
+static_assert(sizeof(WBP_Control_Settings_C_OnMouseYChanged) == 0x000001, "Wrong size on WBP_Control_Settings_C_OnMouseYChanged");
+static_assert(offsetof(WBP_Control_Settings_C_OnMouseYChanged, IsOn) == 0x000000, "Member 'WBP_Control_Settings_C_OnMouseYChanged::IsOn' has a wrong offset!");
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.OnMouseXChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Control_Settings_C_OnMouseXChanged final
+{
+public:
+	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Control_Settings_C_OnMouseXChanged) == 0x000001, "Wrong alignment on WBP_Control_Settings_C_OnMouseXChanged");
+static_assert(sizeof(WBP_Control_Settings_C_OnMouseXChanged) == 0x000001, "Wrong size on WBP_Control_Settings_C_OnMouseXChanged");
+static_assert(offsetof(WBP_Control_Settings_C_OnMouseXChanged, IsOn) == 0x000000, "Member 'WBP_Control_Settings_C_OnMouseXChanged::IsOn' has a wrong offset!");
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.OnMouseSensiChanged
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Control_Settings_C_OnMouseSensiChanged final
+{
+public:
+	double                                        Value;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Control_Settings_C_OnMouseSensiChanged) == 0x000008, "Wrong alignment on WBP_Control_Settings_C_OnMouseSensiChanged");
+static_assert(sizeof(WBP_Control_Settings_C_OnMouseSensiChanged) == 0x000008, "Wrong size on WBP_Control_Settings_C_OnMouseSensiChanged");
+static_assert(offsetof(WBP_Control_Settings_C_OnMouseSensiChanged, Value) == 0x000000, "Member 'WBP_Control_Settings_C_OnMouseSensiChanged::Value' has a wrong offset!");
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.SwitchTab
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Control_Settings_C_SwitchTab final
+{
+public:
+	bool                                          Next;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Control_Settings_C_SwitchTab) == 0x000001, "Wrong alignment on WBP_Control_Settings_C_SwitchTab");
+static_assert(sizeof(WBP_Control_Settings_C_SwitchTab) == 0x000001, "Wrong size on WBP_Control_Settings_C_SwitchTab");
+static_assert(offsetof(WBP_Control_Settings_C_SwitchTab, Next) == 0x000000, "Member 'WBP_Control_Settings_C_SwitchTab::Next' has a wrong offset!");
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.SwitchPanel
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_Control_Settings_C_SwitchPanel final
+{
+public:
+	int32                                         Param_Index;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Control_Settings_C_SwitchPanel) == 0x000004, "Wrong alignment on WBP_Control_Settings_C_SwitchPanel");
+static_assert(sizeof(WBP_Control_Settings_C_SwitchPanel) == 0x000004, "Wrong size on WBP_Control_Settings_C_SwitchPanel");
+static_assert(offsetof(WBP_Control_Settings_C_SwitchPanel, Param_Index) == 0x000000, "Member 'WBP_Control_Settings_C_SwitchPanel::Param_Index' has a wrong offset!");
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.SetDefault
+// 0x0188 (0x0188 - 0x0000)
+struct WBP_Control_Settings_C_SetDefault final
+{
+public:
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_2;                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3[0x5];                                        // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPalOptionCommonSettings               K2Node_MakeStruct_PalOptionCommonSettings;         // 0x0008(0x0030)()
+	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_39[0x3];                                       // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPalOptionKeyboardSettings             K2Node_MakeStruct_PalOptionKeyboardSettings;       // 0x003C(0x0014)(NoDestructor)
+	bool                                          CallFunc_IsVisible_ReturnValue_1;                  // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_51[0x3];                                       // 0x0051(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FPalOptionPadSettings                  K2Node_MakeStruct_PalOptionPadSettings;            // 0x0054(0x001C)(NoDestructor)
+	struct FPalOptionUISettings                   K2Node_MakeStruct_PalOptionUISettings;             // 0x0070(0x0018)(NoDestructor)
+	double                                        CallFunc_Conv_IntToDouble_ReturnValue;             // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_CurrentValue_ImplicitCast;      // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_CurrentValue_ImplicitCast_1;    // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_CurrentValue_ImplicitCast_2;    // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_CurrentValue_ImplicitCast_3;    // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_CurrentValue_ImplicitCast_4;    // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_CurrentValue_ImplicitCast_5;    // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_CurrentValue_ImplicitCast_6;    // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetValue_Value_ImplicitCast;              // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_Min_ImplicitCast;               // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_Max_ImplicitCast;               // 0x00D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_Min_ImplicitCast_1;             // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_Max_ImplicitCast_1;             // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_Min_ImplicitCast_2;             // 0x00F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_Max_ImplicitCast_2;             // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_Min_ImplicitCast_3;             // 0x0100(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_Max_ImplicitCast_3;             // 0x0108(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_Min_ImplicitCast_4;             // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_Max_ImplicitCast_4;             // 0x0118(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_Min_ImplicitCast_5;             // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_Max_ImplicitCast_5;             // 0x0128(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_Min_ImplicitCast_6;             // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetValue_Min_ImplicitCast;                // 0x0138(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_Max_ImplicitCast_6;             // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetValue_Max_ImplicitCast;                // 0x0148(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_CurrentValue_ImplicitCast_7;    // 0x0150(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetOutline_OutlineOpacity_ImplicitCast;   // 0x0158(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_CurrentValue_ImplicitCast_8;    // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_Min_ImplicitCast_7;             // 0x0168(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_Max_ImplicitCast_7;             // 0x0170(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_Min_ImplicitCast_8;             // 0x0178(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_SetSlider_Max_ImplicitCast_8;             // 0x0180(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Control_Settings_C_SetDefault) == 0x000008, "Wrong alignment on WBP_Control_Settings_C_SetDefault");
+static_assert(sizeof(WBP_Control_Settings_C_SetDefault) == 0x000188, "Wrong size on WBP_Control_Settings_C_SetDefault");
+static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_Not_PreBool_ReturnValue) == 0x000000, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_Not_PreBool_ReturnValue_1) == 0x000001, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_Not_PreBool_ReturnValue_2) == 0x000002, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_Not_PreBool_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_Control_Settings_C_SetDefault, K2Node_MakeStruct_PalOptionCommonSettings) == 0x000008, "Member 'WBP_Control_Settings_C_SetDefault::K2Node_MakeStruct_PalOptionCommonSettings' has a wrong offset!");
+static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_IsVisible_ReturnValue) == 0x000038, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_IsVisible_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Control_Settings_C_SetDefault, K2Node_MakeStruct_PalOptionKeyboardSettings) == 0x00003C, "Member 'WBP_Control_Settings_C_SetDefault::K2Node_MakeStruct_PalOptionKeyboardSettings' has a wrong offset!");
+static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_IsVisible_ReturnValue_1) == 0x000050, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_IsVisible_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_Control_Settings_C_SetDefault, K2Node_MakeStruct_PalOptionPadSettings) == 0x000054, "Member 'WBP_Control_Settings_C_SetDefault::K2Node_MakeStruct_PalOptionPadSettings' has a wrong offset!");
+static_assert(offsetof(WBP_Control_Settings_C_SetDefault, K2Node_MakeStruct_PalOptionUISettings) == 0x000070, "Member 'WBP_Control_Settings_C_SetDefault::K2Node_MakeStruct_PalOptionUISettings' has a wrong offset!");
+static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_Conv_IntToDouble_ReturnValue) == 0x000088, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_Conv_IntToDouble_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetSlider_CurrentValue_ImplicitCast) == 0x000090, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetSlider_CurrentValue_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetSlider_CurrentValue_ImplicitCast_1) == 0x000098, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetSlider_CurrentValue_ImplicitCast_1' has a wrong offset!");
+static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetSlider_CurrentValue_ImplicitCast_2) == 0x0000A0, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetSlider_CurrentValue_ImplicitCast_2' has a wrong offset!");
+static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetSlider_CurrentValue_ImplicitCast_3) == 0x0000A8, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetSlider_CurrentValue_ImplicitCast_3' has a wrong offset!");
+static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetSlider_CurrentValue_ImplicitCast_4) == 0x0000B0, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetSlider_CurrentValue_ImplicitCast_4' has a wrong offset!");
+static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetSlider_CurrentValue_ImplicitCast_5) == 0x0000B8, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetSlider_CurrentValue_ImplicitCast_5' has a wrong offset!");
+static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetSlider_CurrentValue_ImplicitCast_6) == 0x0000C0, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetSlider_CurrentValue_ImplicitCast_6' has a wrong offset!");
+static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetValue_Value_ImplicitCast) == 0x0000C8, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetValue_Value_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetSlider_Min_ImplicitCast) == 0x0000D0, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetSlider_Min_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetSlider_Max_ImplicitCast) == 0x0000D8, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetSlider_Max_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetSlider_Min_ImplicitCast_1) == 0x0000E0, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetSlider_Min_ImplicitCast_1' has a wrong offset!");
+static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetSlider_Max_ImplicitCast_1) == 0x0000E8, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetSlider_Max_ImplicitCast_1' has a wrong offset!");
+static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetSlider_Min_ImplicitCast_2) == 0x0000F0, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetSlider_Min_ImplicitCast_2' has a wrong offset!");
+static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetSlider_Max_ImplicitCast_2) == 0x0000F8, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetSlider_Max_ImplicitCast_2' has a wrong offset!");
+static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetSlider_Min_ImplicitCast_3) == 0x000100, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetSlider_Min_ImplicitCast_3' has a wrong offset!");
+static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetSlider_Max_ImplicitCast_3) == 0x000108, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetSlider_Max_ImplicitCast_3' has a wrong offset!");
+static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetSlider_Min_ImplicitCast_4) == 0x000110, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetSlider_Min_ImplicitCast_4' has a wrong offset!");
+static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetSlider_Max_ImplicitCast_4) == 0x000118, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetSlider_Max_ImplicitCast_4' has a wrong offset!");
+static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetSlider_Min_ImplicitCast_5) == 0x000120, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetSlider_Min_ImplicitCast_5' has a wrong offset!");
+static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetSlider_Max_ImplicitCast_5) == 0x000128, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetSlider_Max_ImplicitCast_5' has a wrong offset!");
+static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetSlider_Min_ImplicitCast_6) == 0x000130, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetSlider_Min_ImplicitCast_6' has a wrong offset!");
+static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetValue_Min_ImplicitCast) == 0x000138, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetValue_Min_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetSlider_Max_ImplicitCast_6) == 0x000140, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetSlider_Max_ImplicitCast_6' has a wrong offset!");
+static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetValue_Max_ImplicitCast) == 0x000148, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetValue_Max_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetSlider_CurrentValue_ImplicitCast_7) == 0x000150, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetSlider_CurrentValue_ImplicitCast_7' has a wrong offset!");
+static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetOutline_OutlineOpacity_ImplicitCast) == 0x000158, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetOutline_OutlineOpacity_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetSlider_CurrentValue_ImplicitCast_8) == 0x000160, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetSlider_CurrentValue_ImplicitCast_8' has a wrong offset!");
+static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetSlider_Min_ImplicitCast_7) == 0x000168, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetSlider_Min_ImplicitCast_7' has a wrong offset!");
+static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetSlider_Max_ImplicitCast_7) == 0x000170, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetSlider_Max_ImplicitCast_7' has a wrong offset!");
+static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetSlider_Min_ImplicitCast_8) == 0x000178, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetSlider_Min_ImplicitCast_8' has a wrong offset!");
+static_assert(offsetof(WBP_Control_Settings_C_SetDefault, CallFunc_SetSlider_Max_ImplicitCast_8) == 0x000180, "Member 'WBP_Control_Settings_C_SetDefault::CallFunc_SetSlider_Max_ImplicitCast_8' has a wrong offset!");
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.OnVibChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Control_Settings_C_OnVibChanged final
+{
+public:
+	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Control_Settings_C_OnVibChanged) == 0x000001, "Wrong alignment on WBP_Control_Settings_C_OnVibChanged");
+static_assert(sizeof(WBP_Control_Settings_C_OnVibChanged) == 0x000001, "Wrong size on WBP_Control_Settings_C_OnVibChanged");
+static_assert(offsetof(WBP_Control_Settings_C_OnVibChanged, IsOn) == 0x000000, "Member 'WBP_Control_Settings_C_OnVibChanged::IsOn' has a wrong offset!");
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.OnTutorialDisplayChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Control_Settings_C_OnTutorialDisplayChanged final
+{
+public:
+	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Control_Settings_C_OnTutorialDisplayChanged) == 0x000001, "Wrong alignment on WBP_Control_Settings_C_OnTutorialDisplayChanged");
+static_assert(sizeof(WBP_Control_Settings_C_OnTutorialDisplayChanged) == 0x000001, "Wrong size on WBP_Control_Settings_C_OnTutorialDisplayChanged");
+static_assert(offsetof(WBP_Control_Settings_C_OnTutorialDisplayChanged, IsOn) == 0x000000, "Member 'WBP_Control_Settings_C_OnTutorialDisplayChanged::IsOn' has a wrong offset!");
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.OnToggleLongPressChanged_GP
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Control_Settings_C_OnToggleLongPressChanged_GP final
+{
+public:
+	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Control_Settings_C_OnToggleLongPressChanged_GP) == 0x000001, "Wrong alignment on WBP_Control_Settings_C_OnToggleLongPressChanged_GP");
+static_assert(sizeof(WBP_Control_Settings_C_OnToggleLongPressChanged_GP) == 0x000001, "Wrong size on WBP_Control_Settings_C_OnToggleLongPressChanged_GP");
+static_assert(offsetof(WBP_Control_Settings_C_OnToggleLongPressChanged_GP, IsOn) == 0x000000, "Member 'WBP_Control_Settings_C_OnToggleLongPressChanged_GP::IsOn' has a wrong offset!");
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.OnToggleLongPressChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Control_Settings_C_OnToggleLongPressChanged final
+{
+public:
+	bool                                          IsOn;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_Control_Settings_C_OnToggleLongPressChanged) == 0x000001, "Wrong alignment on WBP_Control_Settings_C_OnToggleLongPressChanged");
+static_assert(sizeof(WBP_Control_Settings_C_OnToggleLongPressChanged) == 0x000001, "Wrong size on WBP_Control_Settings_C_OnToggleLongPressChanged");
+static_assert(offsetof(WBP_Control_Settings_C_OnToggleLongPressChanged, IsOn) == 0x000000, "Member 'WBP_Control_Settings_C_OnToggleLongPressChanged::IsOn' has a wrong offset!");
 
 }
 

@@ -71,20 +71,6 @@ public:
 	TArray<struct FDataTableRowHandle>            ColorSelections;                                   // 0x0490(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance)
 
 public:
-	void SwitchTab(bool Next);
-	void SwitchPanel(int32 Param_Index);
-	void SetDefault();
-	void OnVibChanged(bool IsOn);
-	void OnTutorialDisplayChanged(bool IsOn);
-	void OnToggleLongPressChanged_GP(bool IsOn);
-	void OnToggleLongPressChanged(bool IsOn);
-	void OnRStickYChanged(bool IsOn);
-	void OnRStickXChanged(bool IsOn);
-	void OnRStickThreChanged(double Value);
-	void OnRStickSensiChanged(double Value);
-	void OnMouseYChanged(bool IsOn);
-	void OnMouseXChanged(bool IsOn);
-	void OnMouseSensiChanged(double Value);
 	void OnMouseAIMChanged(double Value);
 	void OnLStickThreChanged(double Value);
 	void OnHideChatChanged(bool IsOn);
@@ -102,6 +88,20 @@ public:
 	void ExecuteUbergraph_WBP_Control_Settings(int32 EntryPoint);
 	void Construct();
 	void ApplySettings();
+	void OnRStickYChanged(bool IsOn);
+	void OnRStickXChanged(bool IsOn);
+	void OnRStickThreChanged(double Value);
+	void OnRStickSensiChanged(double Value);
+	void OnMouseYChanged(bool IsOn);
+	void OnMouseXChanged(bool IsOn);
+	void OnMouseSensiChanged(double Value);
+	void SwitchTab(bool Next);
+	void SwitchPanel(int32 Param_Index);
+	void SetDefault();
+	void OnVibChanged(bool IsOn);
+	void OnTutorialDisplayChanged(bool IsOn);
+	void OnToggleLongPressChanged_GP(bool IsOn);
+	void OnToggleLongPressChanged(bool IsOn);
 
 public:
 	static class UClass* StaticClass()

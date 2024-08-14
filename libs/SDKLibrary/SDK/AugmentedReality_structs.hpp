@@ -539,6 +539,19 @@ enum class EARCandidateImageOrientation : uint8
 	EARCandidateImageOrientation_MAX         = 2,
 };
 
+// ScriptStruct AugmentedReality.ARPoseUpdatePayload
+// 0x0070 (0x0070 - 0x0000)
+struct FARPoseUpdatePayload final
+{
+public:
+	struct FTransform                             WorldTransform;                                    // 0x0000(0x0060)(BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FTransform>                     JointTransforms;                                   // 0x0060(0x0010)(BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FARPoseUpdatePayload) == 0x000010, "Wrong alignment on FARPoseUpdatePayload");
+static_assert(sizeof(FARPoseUpdatePayload) == 0x000070, "Wrong size on FARPoseUpdatePayload");
+static_assert(offsetof(FARPoseUpdatePayload, WorldTransform) == 0x000000, "Member 'FARPoseUpdatePayload::WorldTransform' has a wrong offset!");
+static_assert(offsetof(FARPoseUpdatePayload, JointTransforms) == 0x000060, "Member 'FARPoseUpdatePayload::JointTransforms' has a wrong offset!");
+
 // ScriptStruct AugmentedReality.TrackedGeometryGroup
 // 0x0018 (0x0018 - 0x0000)
 struct FTrackedGeometryGroup final
@@ -570,6 +583,17 @@ static_assert(offsetof(FARSessionPayload, ConfigFlags) == 0x000000, "Member 'FAR
 static_assert(offsetof(FARSessionPayload, DefaultMeshMaterial) == 0x000008, "Member 'FARSessionPayload::DefaultMeshMaterial' has a wrong offset!");
 static_assert(offsetof(FARSessionPayload, DefaultWireframeMeshMaterial) == 0x000010, "Member 'FARSessionPayload::DefaultWireframeMeshMaterial' has a wrong offset!");
 
+// ScriptStruct AugmentedReality.ARObjectUpdatePayload
+// 0x0060 (0x0060 - 0x0000)
+struct FARObjectUpdatePayload final
+{
+public:
+	struct FTransform                             WorldTransform;                                    // 0x0000(0x0060)(BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FARObjectUpdatePayload) == 0x000010, "Wrong alignment on FARObjectUpdatePayload");
+static_assert(sizeof(FARObjectUpdatePayload) == 0x000060, "Wrong size on FARObjectUpdatePayload");
+static_assert(offsetof(FARObjectUpdatePayload, WorldTransform) == 0x000000, "Member 'FARObjectUpdatePayload::WorldTransform' has a wrong offset!");
+
 // ScriptStruct AugmentedReality.ARPlaneUpdatePayload
 // 0x00D0 (0x00D0 - 0x0000)
 struct FARPlaneUpdatePayload final
@@ -593,16 +617,6 @@ static_assert(offsetof(FARPlaneUpdatePayload, Extents) == 0x000098, "Member 'FAR
 static_assert(offsetof(FARPlaneUpdatePayload, BoundaryVertices) == 0x0000B0, "Member 'FARPlaneUpdatePayload::BoundaryVertices' has a wrong offset!");
 static_assert(offsetof(FARPlaneUpdatePayload, ObjectClassification) == 0x0000C0, "Member 'FARPlaneUpdatePayload::ObjectClassification' has a wrong offset!");
 
-// ScriptStruct AugmentedReality.ARPointUpdatePayload
-// 0x0001 (0x0001 - 0x0000)
-struct FARPointUpdatePayload final
-{
-public:
-	uint8                                         Pad_0[0x1];                                        // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FARPointUpdatePayload) == 0x000001, "Wrong alignment on FARPointUpdatePayload");
-static_assert(sizeof(FARPointUpdatePayload) == 0x000001, "Wrong size on FARPointUpdatePayload");
-
 // ScriptStruct AugmentedReality.ARFaceUpdatePayload
 // 0x0060 (0x0060 - 0x0000)
 struct FARFaceUpdatePayload final
@@ -619,6 +633,16 @@ static_assert(offsetof(FARFaceUpdatePayload, SessionPayload) == 0x000000, "Membe
 static_assert(offsetof(FARFaceUpdatePayload, LeftEyePosition) == 0x000018, "Member 'FARFaceUpdatePayload::LeftEyePosition' has a wrong offset!");
 static_assert(offsetof(FARFaceUpdatePayload, RightEyePosition) == 0x000030, "Member 'FARFaceUpdatePayload::RightEyePosition' has a wrong offset!");
 static_assert(offsetof(FARFaceUpdatePayload, LookAtTarget) == 0x000048, "Member 'FARFaceUpdatePayload::LookAtTarget' has a wrong offset!");
+
+// ScriptStruct AugmentedReality.ARPointUpdatePayload
+// 0x0001 (0x0001 - 0x0000)
+struct FARPointUpdatePayload final
+{
+public:
+	uint8                                         Pad_0[0x1];                                        // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FARPointUpdatePayload) == 0x000001, "Wrong alignment on FARPointUpdatePayload");
+static_assert(sizeof(FARPointUpdatePayload) == 0x000001, "Wrong size on FARPointUpdatePayload");
 
 // ScriptStruct AugmentedReality.ARImageUpdatePayload
 // 0x00A0 (0x00A0 - 0x0000)
@@ -658,19 +682,6 @@ static_assert(offsetof(FARQRCodeUpdatePayload, WorldTransform) == 0x000020, "Mem
 static_assert(offsetof(FARQRCodeUpdatePayload, Extents) == 0x000080, "Member 'FARQRCodeUpdatePayload::Extents' has a wrong offset!");
 static_assert(offsetof(FARQRCodeUpdatePayload, QRCode) == 0x000098, "Member 'FARQRCodeUpdatePayload::QRCode' has a wrong offset!");
 
-// ScriptStruct AugmentedReality.ARPoseUpdatePayload
-// 0x0070 (0x0070 - 0x0000)
-struct FARPoseUpdatePayload final
-{
-public:
-	struct FTransform                             WorldTransform;                                    // 0x0000(0x0060)(BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FTransform>                     JointTransforms;                                   // 0x0060(0x0010)(BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FARPoseUpdatePayload) == 0x000010, "Wrong alignment on FARPoseUpdatePayload");
-static_assert(sizeof(FARPoseUpdatePayload) == 0x000070, "Wrong size on FARPoseUpdatePayload");
-static_assert(offsetof(FARPoseUpdatePayload, WorldTransform) == 0x000000, "Member 'FARPoseUpdatePayload::WorldTransform' has a wrong offset!");
-static_assert(offsetof(FARPoseUpdatePayload, JointTransforms) == 0x000060, "Member 'FARPoseUpdatePayload::JointTransforms' has a wrong offset!");
-
 // ScriptStruct AugmentedReality.AREnvironmentProbeUpdatePayload
 // 0x0060 (0x0060 - 0x0000)
 struct FAREnvironmentProbeUpdatePayload final
@@ -681,17 +692,6 @@ public:
 static_assert(alignof(FAREnvironmentProbeUpdatePayload) == 0x000010, "Wrong alignment on FAREnvironmentProbeUpdatePayload");
 static_assert(sizeof(FAREnvironmentProbeUpdatePayload) == 0x000060, "Wrong size on FAREnvironmentProbeUpdatePayload");
 static_assert(offsetof(FAREnvironmentProbeUpdatePayload, WorldTransform) == 0x000000, "Member 'FAREnvironmentProbeUpdatePayload::WorldTransform' has a wrong offset!");
-
-// ScriptStruct AugmentedReality.ARObjectUpdatePayload
-// 0x0060 (0x0060 - 0x0000)
-struct FARObjectUpdatePayload final
-{
-public:
-	struct FTransform                             WorldTransform;                                    // 0x0000(0x0060)(BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FARObjectUpdatePayload) == 0x000010, "Wrong alignment on FARObjectUpdatePayload");
-static_assert(sizeof(FARObjectUpdatePayload) == 0x000060, "Wrong size on FARObjectUpdatePayload");
-static_assert(offsetof(FARObjectUpdatePayload, WorldTransform) == 0x000000, "Member 'FARObjectUpdatePayload::WorldTransform' has a wrong offset!");
 
 // ScriptStruct AugmentedReality.ARMeshUpdatePayload
 // 0x0090 (0x0090 - 0x0000)

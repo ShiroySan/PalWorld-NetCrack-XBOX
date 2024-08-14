@@ -17,280 +17,6 @@
 namespace SDK
 {
 
-// Function WBP_Control_Settings.WBP_Control_Settings_C.SwitchTab
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Next                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Control_Settings_C::SwitchTab(bool Next)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Control_Settings_C", "SwitchTab");
-
-	Params::WBP_Control_Settings_C_SwitchTab Parms{};
-
-	Parms.Next = Next;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Control_Settings.WBP_Control_Settings_C.SwitchPanel
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Control_Settings_C::SwitchPanel(int32 Param_Index)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Control_Settings_C", "SwitchPanel");
-
-	Params::WBP_Control_Settings_C_SwitchPanel Parms{};
-
-	Parms.Param_Index = Param_Index;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Control_Settings.WBP_Control_Settings_C.SetDefault
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_Control_Settings_C::SetDefault()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Control_Settings_C", "SetDefault");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Control_Settings.WBP_Control_Settings_C.OnVibChanged
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsOn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Control_Settings_C::OnVibChanged(bool IsOn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Control_Settings_C", "OnVibChanged");
-
-	Params::WBP_Control_Settings_C_OnVibChanged Parms{};
-
-	Parms.IsOn = IsOn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Control_Settings.WBP_Control_Settings_C.OnTutorialDisplayChanged
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsOn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Control_Settings_C::OnTutorialDisplayChanged(bool IsOn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Control_Settings_C", "OnTutorialDisplayChanged");
-
-	Params::WBP_Control_Settings_C_OnTutorialDisplayChanged Parms{};
-
-	Parms.IsOn = IsOn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Control_Settings.WBP_Control_Settings_C.OnToggleLongPressChanged_GP
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsOn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Control_Settings_C::OnToggleLongPressChanged_GP(bool IsOn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Control_Settings_C", "OnToggleLongPressChanged_GP");
-
-	Params::WBP_Control_Settings_C_OnToggleLongPressChanged_GP Parms{};
-
-	Parms.IsOn = IsOn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Control_Settings.WBP_Control_Settings_C.OnToggleLongPressChanged
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsOn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Control_Settings_C::OnToggleLongPressChanged(bool IsOn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Control_Settings_C", "OnToggleLongPressChanged");
-
-	Params::WBP_Control_Settings_C_OnToggleLongPressChanged Parms{};
-
-	Parms.IsOn = IsOn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Control_Settings.WBP_Control_Settings_C.OnRStickYChanged
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsOn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Control_Settings_C::OnRStickYChanged(bool IsOn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Control_Settings_C", "OnRStickYChanged");
-
-	Params::WBP_Control_Settings_C_OnRStickYChanged Parms{};
-
-	Parms.IsOn = IsOn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Control_Settings.WBP_Control_Settings_C.OnRStickXChanged
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsOn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Control_Settings_C::OnRStickXChanged(bool IsOn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Control_Settings_C", "OnRStickXChanged");
-
-	Params::WBP_Control_Settings_C_OnRStickXChanged Parms{};
-
-	Parms.IsOn = IsOn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Control_Settings.WBP_Control_Settings_C.OnRStickThreChanged
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Control_Settings_C::OnRStickThreChanged(double Value)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Control_Settings_C", "OnRStickThreChanged");
-
-	Params::WBP_Control_Settings_C_OnRStickThreChanged Parms{};
-
-	Parms.Value = Value;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Control_Settings.WBP_Control_Settings_C.OnRStickSensiChanged
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Control_Settings_C::OnRStickSensiChanged(double Value)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Control_Settings_C", "OnRStickSensiChanged");
-
-	Params::WBP_Control_Settings_C_OnRStickSensiChanged Parms{};
-
-	Parms.Value = Value;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Control_Settings.WBP_Control_Settings_C.OnMouseYChanged
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsOn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Control_Settings_C::OnMouseYChanged(bool IsOn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Control_Settings_C", "OnMouseYChanged");
-
-	Params::WBP_Control_Settings_C_OnMouseYChanged Parms{};
-
-	Parms.IsOn = IsOn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Control_Settings.WBP_Control_Settings_C.OnMouseXChanged
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsOn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Control_Settings_C::OnMouseXChanged(bool IsOn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Control_Settings_C", "OnMouseXChanged");
-
-	Params::WBP_Control_Settings_C_OnMouseXChanged Parms{};
-
-	Parms.IsOn = IsOn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Control_Settings.WBP_Control_Settings_C.OnMouseSensiChanged
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Control_Settings_C::OnMouseSensiChanged(double Value)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Control_Settings_C", "OnMouseSensiChanged");
-
-	Params::WBP_Control_Settings_C_OnMouseSensiChanged Parms{};
-
-	Parms.Value = Value;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_Control_Settings.WBP_Control_Settings_C.OnMouseAIMChanged
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -617,6 +343,280 @@ void UWBP_Control_Settings_C::ApplySettings()
 		Func = Class->GetFunction("WBP_Control_Settings_C", "ApplySettings");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.OnRStickYChanged
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsOn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Control_Settings_C::OnRStickYChanged(bool IsOn)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Control_Settings_C", "OnRStickYChanged");
+
+	Params::WBP_Control_Settings_C_OnRStickYChanged Parms{};
+
+	Parms.IsOn = IsOn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.OnRStickXChanged
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsOn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Control_Settings_C::OnRStickXChanged(bool IsOn)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Control_Settings_C", "OnRStickXChanged");
+
+	Params::WBP_Control_Settings_C_OnRStickXChanged Parms{};
+
+	Parms.IsOn = IsOn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.OnRStickThreChanged
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Control_Settings_C::OnRStickThreChanged(double Value)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Control_Settings_C", "OnRStickThreChanged");
+
+	Params::WBP_Control_Settings_C_OnRStickThreChanged Parms{};
+
+	Parms.Value = Value;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.OnRStickSensiChanged
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Control_Settings_C::OnRStickSensiChanged(double Value)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Control_Settings_C", "OnRStickSensiChanged");
+
+	Params::WBP_Control_Settings_C_OnRStickSensiChanged Parms{};
+
+	Parms.Value = Value;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.OnMouseYChanged
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsOn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Control_Settings_C::OnMouseYChanged(bool IsOn)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Control_Settings_C", "OnMouseYChanged");
+
+	Params::WBP_Control_Settings_C_OnMouseYChanged Parms{};
+
+	Parms.IsOn = IsOn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.OnMouseXChanged
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsOn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Control_Settings_C::OnMouseXChanged(bool IsOn)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Control_Settings_C", "OnMouseXChanged");
+
+	Params::WBP_Control_Settings_C_OnMouseXChanged Parms{};
+
+	Parms.IsOn = IsOn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.OnMouseSensiChanged
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Control_Settings_C::OnMouseSensiChanged(double Value)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Control_Settings_C", "OnMouseSensiChanged");
+
+	Params::WBP_Control_Settings_C_OnMouseSensiChanged Parms{};
+
+	Parms.Value = Value;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.SwitchTab
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Next                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Control_Settings_C::SwitchTab(bool Next)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Control_Settings_C", "SwitchTab");
+
+	Params::WBP_Control_Settings_C_SwitchTab Parms{};
+
+	Parms.Next = Next;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.SwitchPanel
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Param_Index                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Control_Settings_C::SwitchPanel(int32 Param_Index)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Control_Settings_C", "SwitchPanel");
+
+	Params::WBP_Control_Settings_C_SwitchPanel Parms{};
+
+	Parms.Param_Index = Param_Index;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.SetDefault
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_Control_Settings_C::SetDefault()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Control_Settings_C", "SetDefault");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.OnVibChanged
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsOn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Control_Settings_C::OnVibChanged(bool IsOn)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Control_Settings_C", "OnVibChanged");
+
+	Params::WBP_Control_Settings_C_OnVibChanged Parms{};
+
+	Parms.IsOn = IsOn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.OnTutorialDisplayChanged
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsOn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Control_Settings_C::OnTutorialDisplayChanged(bool IsOn)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Control_Settings_C", "OnTutorialDisplayChanged");
+
+	Params::WBP_Control_Settings_C_OnTutorialDisplayChanged Parms{};
+
+	Parms.IsOn = IsOn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.OnToggleLongPressChanged_GP
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsOn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Control_Settings_C::OnToggleLongPressChanged_GP(bool IsOn)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Control_Settings_C", "OnToggleLongPressChanged_GP");
+
+	Params::WBP_Control_Settings_C_OnToggleLongPressChanged_GP Parms{};
+
+	Parms.IsOn = IsOn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Control_Settings.WBP_Control_Settings_C.OnToggleLongPressChanged
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsOn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Control_Settings_C::OnToggleLongPressChanged(bool IsOn)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_Control_Settings_C", "OnToggleLongPressChanged");
+
+	Params::WBP_Control_Settings_C_OnToggleLongPressChanged Parms{};
+
+	Parms.IsOn = IsOn;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }
